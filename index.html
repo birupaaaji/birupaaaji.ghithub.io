@@ -26,7 +26,7 @@
         <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
           <span id="themeIcon">☀</span>
         </button>
-        <a href="mailto:birat-thakali@hotmail.com" class="nav-cta">Hire me</a>
+        <a href="#contact" class="nav-cta">Hire me</a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -38,7 +38,7 @@
       <a href="#experience" class="mob-link">Experience</a>
       <a href="#projects" class="mob-link">Projects</a>
       <a href="#contact" class="mob-link">Contact</a>
-      <a href="mailto:birat-thakali@hotmail.com" class="mob-link mob-cta">Hire me</a>
+      <a href="#contact" class="mob-link mob-cta">Hire me</a>
     </div>
   </nav>
 
@@ -391,20 +391,20 @@
           <div class="form-row">
             <div class="field">
               <label for="fname">Name</label>
-              <input type="text" id="fname" placeholder="Your name" required />
+              <input type="text" id="fname" name="from_name" placeholder="Your name" required />
             </div>
             <div class="field">
               <label for="femail">Email</label>
-              <input type="email" id="femail" placeholder="your@email.com" required />
+              <input type="email" id="femail" name="reply_to" placeholder="your@email.com" required />
             </div>
           </div>
           <div class="field">
             <label for="fsubject">Subject</label>
-            <input type="text" id="fsubject" placeholder="Role inquiry, project, collaboration…" />
+            <input type="text" id="fsubject" name="subject" placeholder="Role inquiry, project, collaboration…" />
           </div>
           <div class="field">
             <label for="fmessage">Message</label>
-            <textarea id="fmessage" rows="5" placeholder="Tell me what you're working on…" required></textarea>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me what you're working on…" required></textarea>
           </div>
           <button type="submit" class="btn-primary submit-btn" id="submitBtn">Send Message</button>
           <div class="form-success" id="formSuccess">✓ Sent — I'll get back to you soon.</div>
@@ -420,7 +420,6 @@
       <span class="footer-copy">© 2025 · Business &amp; Data Analyst · Sydney, AU</span>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/birat-thakali-6b6648159" target="_blank">LinkedIn</a>
-        <a href="mailto:birat-thakali@hotmail.com">Email</a>
       </div>
     </div>
   </footer>
