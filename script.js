@@ -87,6 +87,21 @@ const skillObs = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 document.querySelectorAll('.skill-fill').forEach(f => skillObs.observe(f));
 
+// Copy email to clipboard
+function copyEmail() {
+  navigator.clipboard.writeText('birat-thakali@hotmail.com').then(() => {
+    const btn = document.getElementById('emailCopyBtn');
+    const txt = document.getElementById('emailCopyText');
+    txt.textContent = '✓ Copied to clipboard!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      txt.textContent = 'birat-thakali@hotmail.com ⧉';
+      btn.classList.remove('copied');
+    }, 2500);
+    snack('Email address copied!');
+  });
+}
+
 // Snackbar
 const snackEl = document.getElementById('snackbar');
 let snackT;
