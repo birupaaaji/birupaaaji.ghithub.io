@@ -377,10 +377,10 @@
               <span class="contact-item-label">Phone</span>
               <span class="contact-item-val">0451 931 530 ↗</span>
             </a>
-            <a href="mailto:birat-thakali@hotmail.com" class="contact-item" target="_blank" rel="noopener">
+            <button onclick="copyEmail()" class="contact-item contact-item-btn" id="emailCopyBtn">
               <span class="contact-item-label">Email</span>
-              <span class="contact-item-val">birat-thakali@hotmail.com ↗</span>
-            </a>
+              <span class="contact-item-val" id="emailCopyText">birat-thakali@hotmail.com ⧉</span>
+            </button>
             <a href="https://www.linkedin.com/in/birat-thakali-6b6648159" target="_blank" class="contact-item">
               <span class="contact-item-label">LinkedIn</span>
               <span class="contact-item-val">birat-thakali ↗</span>
@@ -389,9 +389,7 @@
         </div>
         <form class="contact-form reveal d2" id="contactForm" novalidate>
           <!-- Formspree success message -->
-          <div data-fs-success class="form-success" id="formSuccess">
-            ✓ Message received — I'll get back to you within 24 hours.
-          </div>
+          <div data-fs-success class="form-success" id="formSuccess"></div>
           <!-- Formspree global error message -->
           <div data-fs-error class="form-error" id="formError"></div>
 
